@@ -1,6 +1,4 @@
-﻿using System.Reflection.Metadata.Ecma335;
-
-namespace POO.Concepts.Core;
+﻿namespace POO.Concepts.Core;
 
 public class Date
 {
