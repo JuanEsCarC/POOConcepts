@@ -1,4 +1,6 @@
-﻿namespace POO.Concepts.Core;
+﻿using System.Reflection.Metadata.Ecma335;
+
+namespace POO.Concepts.Core;
 
 public class Date
 {
@@ -23,15 +25,15 @@ public class Date
     }
 
     //Public Properties
-    public int Day 
+    public int Day
     {
-        get 
+        get
         {
-            return _day; 
+            return _day;
         }
         set
         {
-            _day = value;
+            _day = ValidateDay(value);
         }
     }
 
@@ -48,7 +50,7 @@ public class Date
     }
 
     //Another way to use 'get' when it only has one line with 'return'
-    public int Year 
+    public int Year
     {
         get => _year;
         set
@@ -64,7 +66,7 @@ public class Date
         return $"{Year:0000}/{Month:00}/{Day:00}";
     }
 
-    private bool IsLeapYear (int year)
+    private bool IsLeapYear(int year)
     {
         return (year % 4 == 0 && year % 100 != 0) || (year % 400 == 0);
     }
@@ -89,24 +91,23 @@ public class Date
 
     private int ValidateDay(int day)
     {
-        if (day == 29 && IsLeapYear(Year))
+
+        int maxDay = Month
+
+        switch
+        {
+            2 => IsLeapYear(Year) ? 29 : 28,
+            4 or 6 or 9 or 11 => 30,
+            _ => 31,
+        };
+        
+        if (day >= 1 && day <= maxDay)
         {
             return day;
         }
+        throw new Exception($"The day: {day} is not valid for month: {Month} and year: {Year}.");
 
-        if ((day >= 1 && day <= 28 && Month == 2) ||
-            (day >= 1 && day <= 30 && (Month == 4 || Month == 6 || Month == 9 || Month == 11)) ||
-            (day >= 1 && day <= 31 && (Month == 1 || Month == 3 || Month == 5 || Month == 7 || Month == 8 || Month == 10 || Month == 12)))
-        {
-            return day;
-        }
-
-
-        if (day < 1)
-        {
-            throw new Exception($"The day: {day} is not valid.");
-        }
-        return day;
     }
+
 
 }
