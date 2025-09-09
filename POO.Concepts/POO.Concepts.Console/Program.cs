@@ -4,13 +4,11 @@ using POO.Concepts.Core;
 
 try
 {
-    var date_1 = new Date(2025, 2, 29);
-    var date_2 = new Date(2028, 2, 29);
-
-    Console.WriteLine(date_1.ToString());
-    Console.WriteLine(date_2.ToString());
+    var employee_1 = new SalaryEmployee { Id = 1010, FirstName = "Juan", LastName = "Cardenas", BornDate = new Date(1985, 11, 02), HireDate = new Date(2021, 5, 18), IsActive = true, Salary = 2000000 };
+    
+    Console.WriteLine(employee_1);
 }
 catch (Exception ex)
 { 
-    Console.WriteLine($"Error: {ex.Message}");    
+    Console.WriteLine(ex.Message);    
 }
