@@ -19,7 +19,7 @@ public class SalaryEmployee : Employee
     public decimal Salary 
     { 
         get => _salary; 
-        set => _salary = ValidSalary(value); 
+        set => _salary = ValidateSalary(value); 
     }
 
     //Methods
@@ -33,7 +33,7 @@ public class SalaryEmployee : Employee
             $"Salary.....: {GetValueToPay():C0}";
     }
 
-    private decimal ValidSalary(decimal salary)
+    private decimal ValidateSalary(decimal salary)
     {
 
         if (salary < MINIMUM_SALARY)

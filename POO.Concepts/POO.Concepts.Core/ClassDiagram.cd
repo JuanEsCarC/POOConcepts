@@ -17,8 +17,15 @@
   <Class Name="POO.Concepts.Core.SalaryEmployee">
     <Position X="7.5" Y="0.75" Width="1.75" />
     <TypeIdentifier>
-      <HashCode>AAAAACAAAAAAAAAEAAAEAAAAQAAAAAAIAAAAAAQAAAA=</HashCode>
+      <HashCode>ACAAACAAAAAAAAAEAAAAAAAAQAAAAAAIAAAAAAQAAAA=</HashCode>
       <FileName>SalaryEmployee.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="POO.Concepts.Core.HourlyEmployee">
+    <Position X="4.75" Y="4" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AIAAAAAAAAQAAAAEAAwAAAAAAAABAAAIAAAAAAAAAAE=</HashCode>
+      <FileName>HourlyEmployee.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Font Name="Segoe UI" Size="9" />
