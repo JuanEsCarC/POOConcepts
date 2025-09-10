@@ -18,8 +18,8 @@ try
         Total += employee.GetValueToPay();
     }
 
-    Console.WriteLine("============================");
-    Console.WriteLine($"TOTAL: {Total:C2}");
+    Console.WriteLine("                      =====================");
+    Console.WriteLine($"TOTAL                  {Total,20:C2}");
 
 }
 catch (Exception ex)

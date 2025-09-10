@@ -25,8 +25,8 @@ public abstract class Employee
     {
         return
             $"{Id}\t{FirstName} {LastName}\n\t" +
-            $"Born date..: {BornDate}\n\t" +
-            $"Hire date..: {HireDate}";
+            $"Born date....: {BornDate}\n\t" +
+            $"Hire date....: {HireDate}";
     }
 
 }

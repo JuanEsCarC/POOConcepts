@@ -30,7 +30,7 @@ public class SalaryEmployee : Employee
     public override string ToString()
     {
         return $"{base.ToString()}\n\t" +
-            $"Salary.....: {GetValueToPay():C0}";
+            $"Salary.......: {GetValueToPay(),20:C0}";
     }
 
     private decimal ValidateSalary(decimal salary)
