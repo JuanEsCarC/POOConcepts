@@ -8,14 +8,14 @@
     </TypeIdentifier>
   </Class>
   <Class Name="POO.Concepts.Core.Employee">
-    <Position X="5" Y="0.75" Width="1.75" />
+    <Position X="7.5" Y="2.25" Width="1.75" />
     <TypeIdentifier>
       <HashCode>ABACAEAAAAAAAAAEEAAAAAAAACAAAAAIAAAAAAAAAAg=</HashCode>
       <FileName>Employee.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="POO.Concepts.Core.SalaryEmployee">
-    <Position X="7.5" Y="0.75" Width="1.75" />
+    <Position X="10.75" Y="0.75" Width="1.75" />
     <TypeIdentifier>
       <HashCode>ACAAACAAAAAAAAAEAAAAAAAAQAAAAAAIAAAAAAQAAAA=</HashCode>
       <FileName>SalaryEmployee.cs</FileName>
@@ -26,6 +26,13 @@
     <TypeIdentifier>
       <HashCode>AIAAAAAAAAQAAAAEAAwAAAAAAAABAAAIAAAAAAAAAAE=</HashCode>
       <FileName>HourlyEmployee.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="POO.Concepts.Core.ComissionEmployee">
+    <Position X="10" Y="4" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAIAAAAAAAAAAIAEAAAABAAAAQAAAAAIAAgAAAAAAAA=</HashCode>
+      <FileName>ComissionEmployee.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Font Name="Segoe UI" Size="9" />

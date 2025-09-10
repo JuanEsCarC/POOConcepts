@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 namespace POO.Concepts.Core;
 
 
-public class HourlyEmployee: Employee
+public class HourlyEmployee : Employee
 {
 
     //Fields
