@@ -6,7 +6,7 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace POO.Concepts.Core;
-public abstract class Employee
+public abstract class Employee : IPay
 {
 
     //Public Properties

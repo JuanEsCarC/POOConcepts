@@ -13,14 +13,19 @@ try
     var employee_4 = new BaseComissionEmployee { Id = 4040, FirstName = "Lina", LastName = "Molina", BornDate = new Date(1990, 3, 15), 
         HireDate = new Date(2025, 2, 20), IsActive = true, Sales = 100000000, ComissionPercentaje = 0.01f, SalaryBase = 500000 };
 
-    var employers = new List<Employee> { employee_1, employee_2, employee_3, employee_4 };
+    var invoice_1 = new Invoice { Id = 1, Description = "Iphone 15", Quantity = 2, Price = 3500000 };
+    var invoice_2 = new Invoice { Id = 2, Description = "Macbook Pro", Quantity = 1, Price = 8500000 };
+    var invoice_3 = new Invoice { Id = 3, Description = "Airpods Pro", Quantity = 4, Price = 800000 };
+
+
+    var items = new List<IPay> { employee_1, employee_2, employee_3, employee_4, invoice_1, invoice_2, invoice_3 };
     decimal Total = 0;
 
-    foreach (var employee in employers)
+    foreach (var item in items)
     {
-        Console.WriteLine(employee);
+        Console.WriteLine(item);
         Console.WriteLine();
-        Total += employee.GetValueToPay();
+        Total += item.GetValueToPay();
     }
 
     Console.WriteLine("                      =====================");
