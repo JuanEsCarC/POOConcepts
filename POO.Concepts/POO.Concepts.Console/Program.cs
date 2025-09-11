@@ -10,8 +10,10 @@ try
         HireDate = new Date(2024, 1, 1), IsActive = true, HourValue = 35000, WorkingHours = 120 };
     var employee_3 = new ComissionEmployee { Id = 3030, FirstName = "Maria", LastName = "Correa", BornDate = new Date(1986, 1, 28), 
         HireDate = new Date(2020, 9, 15), IsActive = true, Sales = 350000000, ComissionPercentaje = 0.02f };
+    var employee_4 = new BaseComissionEmployee { Id = 4040, FirstName = "Lina", LastName = "Molina", BornDate = new Date(1990, 3, 15), 
+        HireDate = new Date(2025, 2, 20), IsActive = true, Sales = 100000000, ComissionPercentaje = 0.01f, SalaryBase = 500000 };
 
-    var employers = new List<Employee> { employee_1, employee_2, employee_3 };
+    var employers = new List<Employee> { employee_1, employee_2, employee_3, employee_4 };
     decimal Total = 0;
 
     foreach (var employee in employers)
